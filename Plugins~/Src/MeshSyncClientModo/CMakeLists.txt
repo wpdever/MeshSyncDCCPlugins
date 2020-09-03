@@ -22,7 +22,7 @@ list(FILTER sources EXCLUDE REGEX "lxu_geometry_triangulation.cpp")
 
 
 add_library(${meshsync_client_modo} SHARED ${sources})
-source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${sources})
+# source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${sources})
 add_dependencies(${meshsync_client_modo} 
     MeshUtils MeshSync
 )
