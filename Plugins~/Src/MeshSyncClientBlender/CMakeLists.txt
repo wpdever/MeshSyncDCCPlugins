@@ -27,6 +27,7 @@ set(BLENDER_INCLUDE_DIRS
 
 file(GLOB sources *.cpp *.h *.c)
 add_library(${MESHSYNC_CLIENT_BLENDER}  SHARED ${sources})
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${sources})
 
 add_dependencies(${MESHSYNC_CLIENT_BLENDER} MeshUtils MeshSync)
 

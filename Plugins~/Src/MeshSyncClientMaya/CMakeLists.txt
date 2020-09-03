@@ -10,6 +10,7 @@ setup_maya(${MAYA_VERSION})
 
 file(GLOB sources *.cpp *.h)
 add_library(${MESHSYNC_CLIENT_MAYA} SHARED ${sources})
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${sources})
 add_dependencies(${MESHSYNC_CLIENT_MAYA} MeshUtils MeshSync)
 
 #Include, pch

@@ -10,6 +10,7 @@ file(GLOB sources *.cpp *.h *.rc)
 set_source_files_properties(*.rc PROPERTIES LANGUAGE RC)
 
 add_library(${MESHSYNC_CLIENT_3DSMAX} SHARED ${sources})
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${sources})
 add_dependencies(${MESHSYNC_CLIENT_3DSMAX} MeshUtils MeshSync)
 
 #Include, pch

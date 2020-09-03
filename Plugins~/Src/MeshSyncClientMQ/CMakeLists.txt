@@ -15,6 +15,7 @@ if(APPLE)
 endif()
 
 add_library(${meshsync_client_metasequoia} MODULE ${sources})
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${sources})
 set_target_properties(${meshsync_client_metasequoia}  PROPERTIES OUTPUT_NAME "MeshSyncClientMQ")
 
 if(APPLE)
